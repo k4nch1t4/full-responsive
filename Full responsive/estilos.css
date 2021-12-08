@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+/* navegacion */
+
+.menu{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #ffffff;
+}
+
+img{
+    width: 70px;
+    margin: 0px 80px;
+}
+
+nav ul li{
+    display: inline;
+    margin: 10px;
+}
+
+ul{
+    margin: 0px 130px;
+}
+
+
+
+/* bienvenida */
+
+.bienvenida{
+    background-image: url(./img/kelly-sikkema-ml1IgjV8OvY-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+
+section{
+    display: grid;
+    grid-template-areas: 
+        "titulo titulo ."
+        "parrafo parrafo parrafo"
+        "boton boton ."
+        ;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 200px auto 90px;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+h1{
+    grid-area: titulo;
+    font-size: 55px;
+    color: #ffffff;
+    padding-left: 120px;
+}
+
+p{
+    grid-area: parrafo;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+button{
+    grid-area: boton;
+    width: 90px;
+    height: 20px;
+    color: #ffffff;
+    background-color: transparent;
+    margin-top: 50px;
+}
+
+/* fin de bienvenida */
+
+/* barra informativa */
+
+.informacion{
+    height: 90px;
+    background-color: rgb(201, 70, 70);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* fin de barra informativa */
+
+/* servicio */
+.servicio{
+    display: flex;
+    flex-direction: column;
+}
+
+.servicio__parrafo{
+    color: black;
+    font-size: 12px;
+}
+
+.servicio__caja{
+    height: 150px;
+    margin: 0px 200px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.servicio__contenedor{
+    height: 200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
